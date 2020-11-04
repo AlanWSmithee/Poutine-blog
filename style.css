@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'ballpark';
+    src: url('polices/ballpark.eot') format('opentype'),
+         url('polices/ballpark.svg') format('svg'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.woff') format('woff');
+}
+@font-face { 
+    font-family: 'dayrom';
+    src: url('polices/dayrom.eot') format('opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg') format('svg');
+}
+
+body {
+    background-image: url("images/fond_gris.png");
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.BlocPage {
+    width: 900px;
+    margin: auto;
+}
+
+section h1, footer h1, nav a
+{
+    font-family: 'Dayrom', serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+header {
+    background: url('images/separateur.png') repeat-x bottom;
+    padding: 0px 25px 0px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.LeHeader {
+    display: flex;
+    flex-direction: column;
+}
+
+.LogoPrincipal {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.LogoPrincipal img {
+    width: 59px;
+    height: 60px;
+}
+
+header h1
+{
+    font-family: 'Ballpark', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0px 0px 0px 10px;
+}
+
+header h2
+{
+    font-family: 'Dayrom', serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+.StyleNav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.StyleNav li{
+    margin-left: 15px;
+}
+
+.StyleNav a {
+    color: black;
+    font-size: 1.3em;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+.StyleNav a:hover{
+    color: rgb(175, 0, 0);
+    border-bottom: 3px solid rgb(175, 0, 0);
+}
+
+.Bannière {
+    width: auto;
+    height: 203px;
+    background-image: url("images/poutine_banniere.jpeg");
+    box-shadow: 0px 3px 4px 2px #1c1a19;
+    margin: 20px 15px 20px 15px;
+    border-radius: 5px;
+    position: relative;
+}
+.SousTexteBan {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(15, 15, 15, 0.7);
+    color: white;
+    width: 100%;
+    font-size: 0.8em;
+}
+.SousTexteBan p{
+    padding-left: 10px;
+}
+.BoutonRouge {
+    position: absolute;
+    right: 10px;
+    padding: 8px 20px 8px 20px;
+    background-image: url("images/fond_degraderouge.png");
+    background-size: cover;
+    border-radius: 5px;
+    margin-top: -6px;
+    text-decoration: none;
+}
+.SousTexteBan a:hover {
+    color: red;
+}
+.SousTexteBan a {
+    color: white;
+}
+
+section {
+    display: flex;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.TitreArticle {
+    display: flex;
+}
+.TitreArticle img {
+    height: 47px;
+    width: 43px;
+}
+.TitreArticle h1 {
+    margin: auto;
+}
+article {
+    margin: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 270%;
+    height: 100%;
+}
+aside {
+    background-color: #706b64;
+    margin: 0px 10px;
+    height: 100%;
+    padding: 0px 15px 15px 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: honeydew;
+}
+aside h1 {
+    text-align: center;
+    margin-block-start: 0px;
+    margin-block-end: 10px;
+}
+.inside {
+    display: flex;
+    flex-direction: column;
+}
+.FlecheBulle {
+    position: relative;
+    left: -25px;
+    top: 100px;
+}
+.photo_moi {
+    margin: auto;
+}
+.reseau {
+    margin: auto;
+}
+.reseau a{
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: url('images/ico_top.png') no-repeat top,
+    url('images/separateur.png') repeat-x top;
+    padding: 20px 10px;
+}
+.LastTweet {
+    flex: 1;
+    margin: 5px;
+}
+.LastTweet p {
+    font-size: 0.8em;
+}
+.MesPhotos {
+    flex: 1;
+    margin: 5px;
+}
+.ligne-photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ligne-photo img {
+    width: 80%;
+    border: 1px solid black;
+}
+
+.MesAmis {
+    flex: 1;
+    margin: 5px;
+}
+.ListeAmis {
+    display: flex;
+}
+.ListeAmis ul {
+    list-style: url("images/ico_liensexterne.png");
+    padding-inline-start: 0px;
+    margin-inline-start: 20px;
+    margin-block-start: 5px;
+}
+.ListeAmis a {
+    color: rgb(175, 0, 0);
+}
+
+footer h1 {
+    font-size: 1.1em;
+}
